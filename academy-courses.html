@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1f5c">
+  <meta name="description" content="Explore security and close-protection courses from Rapid Response Protocol and Logistics Academy.">
+  <title>RRSG Academy | Courses</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/pricing.js" defer></script>
+  <script src="js/courses.js" defer></script>
+  <script src="js/payments.js" defer></script>
+  <script src="js/academy.js" defer></script>
+</head>
+<body class="academy-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header scrolled">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Rapid Response Protocol home"><img src="images/logo.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>RAPID RESPONSE</strong><small>PROTOCOL &amp; LOGISTICS</small></span></a>
+      <div class="nav-links academy-nav"><a href="index.html#services">Services</a><a href="academy-courses.html" aria-current="page">Academy</a><a href="index.html#contact">Contact</a><a class="nav-call" href="register.html">Register</a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="academy-hero">
+      <div class="container">
+        <p class="eyebrow"><span></span> RRSG ACADEMY</p>
+        <h1>Knowledge for a <em>safer practice.</em></h1>
+        <p>Explore professional security and close-protection learning. Choose a course to review the details, request a fee quote or begin registration.</p>
+      </div>
+    </section>
+    <section class="section academy-section">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-blue"><span></span> COURSE CATALOG</p><h2>Learn with <em>purpose.</em></h2></div><p>Course details and fees are managed by RRSG. Contact us if you need assistance selecting a course.</p></div>
+        <div class="course-grid" id="course-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>RAPID RESPONSE</strong><small>PROTOCOL &amp; LOGISTICS</small></span></a><p>We Deliver Rapidly and Safely</p></div>
+      <div class="footer-column"><h2>EXPLORE</h2><a href="index.html">Home</a><a href="academy-courses.html">Courses</a><a href="register.html">Register</a></div>
+      <div class="footer-column"><h2>CONTACT</h2><a href="tel:+2347064440021">+234 706 4440 021</a><a href="mailto:info@rapidresponseprotocol.com">Email RRSG</a></div>
+      <div class="footer-column"><h2>PAYMENTS</h2><span>Secured by Flutterwave</span><span>Card · Bank transfer · USSD</span><a href="payment-policy.html">Refund and Payment Policy</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Rapid Response Protocol and Logistics Limited</span><span>Nigeria <i></i> We Deliver Rapidly and Safely</span><a href="#main">BACK TO TOP ↑</a></div>
+  </footer>
+  <dialog class="payment-dialog course-detail-dialog" id="course-detail" aria-labelledby="detail-title">
+    <div class="payment-dialog-panel">
+      <button class="payment-close" type="button" aria-label="Close course details">×</button>
+      <p class="payment-eyebrow">RRSG ACADEMY · COURSE OVERVIEW</p>
+      <h2 id="detail-title" data-course-title></h2>
+      <p data-course-description></p>
+      <p class="item-price" data-item-price></p>
+      <div class="course-actions"><button class="button button-gold" type="button" data-pay-item>Request a Quote</button><a class="button button-outline course-register" data-course-register>Register</a></div>
+    </div>
+  </dialog>
+</body>
+</html>

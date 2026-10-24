@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1f5c">
+  <meta name="description" content="Register for a Rapid Response Protocol and Logistics Academy course.">
+  <title>Course Registration | RRSG Academy</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/pricing.js" defer></script>
+  <script src="js/courses.js" defer></script>
+  <script src="js/payments.js" defer></script>
+  <script src="js/register.js" defer></script>
+</head>
+<body class="academy-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header scrolled">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>RAPID RESPONSE</strong><small>PROTOCOL &amp; LOGISTICS</small></span></a>
+      <div class="nav-links academy-nav"><a href="academy-courses.html">Courses</a><a href="index.html#contact">Contact</a></div>
+    </nav>
+  </header>
+  <main id="main" class="register-main">
+    <section class="section register-section">
+      <div class="container register-container">
+        <p class="eyebrow eyebrow-blue"><span></span> RRSG ACADEMY</p>
+        <h1>Course <em>registration.</em></h1>
+        <ol class="registration-steps" aria-label="Registration steps"><li data-step-indicator="1" aria-current="step">Your details</li><li data-step-indicator="2">Review</li><li data-step-indicator="3">Payment</li></ol>
+        <form id="registration-form" class="registration-form">
+          <section class="registration-step" data-step="1" aria-labelledby="details-heading">
+            <h2 id="details-heading">Your details</h2>
+            <label>Course<select name="course" id="registration-course" required></select></label>
+            <p class="registration-fee">Course fee: <strong data-registration-fee>Contact us for fees</strong></p>
+            <div class="form-row"><label>Full name<input name="name" autocomplete="name" required minlength="2" maxlength="100"></label><label>Email address<input name="email" type="email" autocomplete="email" required maxlength="150"></label></div>
+            <div class="form-row"><label>Phone number<input name="phone" type="tel" autocomplete="tel" required pattern="\+?[0-9 ]{7,}" maxlength="30"></label><label>Preferred start month<input name="startMonth" type="month"></label></div>
+            <label>Additional note<textarea name="note" rows="3" maxlength="500"></textarea></label>
+            <button class="button button-gold" type="button" data-next>Review registration <span aria-hidden="true">→</span></button>
+          </section>
+          <section class="registration-step" data-step="2" aria-labelledby="review-heading" hidden>
+            <h2 id="review-heading">Review</h2>
+            <dl class="registration-review">
+              <dt>Course</dt><dd data-review="course"></dd><dt>Fee</dt><dd data-review="fee"></dd>
+              <dt>Name</dt><dd data-review="name"></dd><dt>Email</dt><dd data-review="email"></dd>
+              <dt>Phone</dt><dd data-review="phone"></dd><dt>Preferred start month</dt><dd data-review="startMonth"></dd>
+              <dt>Additional note</dt><dd data-review="note"></dd>
+            </dl>
+            <div class="registration-actions"><button class="button button-outline" type="button" data-back>Back</button><button class="button button-gold" type="button" data-next>Continue to payment <span aria-hidden="true">→</span></button></div>
+          </section>
+          <section class="registration-step" data-step="3" aria-labelledby="payment-heading" hidden>
+            <h2 id="payment-heading">Payment</h2>
+            <p data-payment-summary></p>
+            <p class="payment-notice">Payment does not automatically grant course access. RRSG will confirm the transaction before providing course details.</p>
+            <p class="registration-status" role="status" aria-live="polite"></p>
+            <div class="registration-actions"><button class="button button-outline" type="button" data-back>Back to review</button><button class="button button-gold" type="button" data-registration-pay>Pay now</button><button class="button button-navy" type="button" data-pay-later>Pay later</button></div>
+          </section>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span class="brand-copy"><strong>RAPID RESPONSE</strong><small>PROTOCOL &amp; LOGISTICS</small></span></a><p>We Deliver Rapidly and Safely</p></div><div class="footer-column"><h2>ACADEMY</h2><a href="academy-courses.html">Course catalog</a><a href="index.html">Home</a></div><div class="footer-column"><h2>CONTACT</h2><a href="tel:+2347064440021">+234 706 4440 021</a><a href="mailto:info@rapidresponseprotocol.com">Email RRSG</a></div><div class="footer-column"><h2>PAYMENTS</h2><span>Secured by Flutterwave</span><span>Card · Bank transfer · USSD</span><a href="payment-policy.html">Refund and Payment Policy</a></div></div><div class="container footer-bottom"><span>© 2026 Rapid Response Protocol and Logistics Limited</span><span>Nigeria <i></i> We Deliver Rapidly and Safely</span><a href="#main">BACK TO TOP ↑</a></div></footer>
+</body>
+</html>
